@@ -59,9 +59,9 @@ jobs:
           ]
         pact_tool: 
           [
-            # 'docker',
+            'docker',
             # 'ruby_cli',
-            'ruby_standalone'
+            # 'ruby_standalone'
           ]
         node-version: 
           [
