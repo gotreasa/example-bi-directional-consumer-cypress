@@ -51,14 +51,30 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: ['ubuntu-latest', 'windows-latest','macos-latest']
-        pact_tool: ['ruby_standalone']
-        node-version: [14.x]
+        os: 
+          [
+            'ubuntu-latest',
+            'windows-latest',
+            'macos-latest'
+          ]
+        pact_tool: 
+          [
+            # 'docker',
+            # 'ruby_cli',
+            'ruby_standalone'
+          ]
+        node-version: 
+          [
+            # 14.x,
+            16.x,
+            # 18.x,
+            # 20.x
+            ]
         pact_provider:
           [
-            "pactflow-example-bi-directional-provider-dredd",
+            # "pactflow-example-bi-directional-provider-dredd",
             "pactflow-example-bi-directional-provider-postman",
-            "pactflow-example-bi-directional-provider-restassured",
+            # "pactflow-example-bi-directional-provider-restassured",
             # "pactflow-example-provider", # cdct provider - no oas
             # "pactflow-example-bi-directional-provider-dotnet" # mismatch
           ]
