@@ -195,7 +195,7 @@ install-pact-ruby-standalone:
 		./pact/bin/pact-mock-service.bat --help && \
 		./pact/bin/pact-provider-verifier.bat --help && \
 		./pact/bin/pactflow.bat help;; \
-	Darwin) curl -LO https://github.com/pact-foundation/pact-ruby-standalone/releases/download/v${PACT_CLI_STANDALONE_VERSION}/pact-${PACT_CLI_STANDALONE_VERSION}-osx.tar.gz && \
+	Darwin) curl -LO https://github.com/pact-foundation/pact-ruby-standalone/releases/download/v${PACT_CLI_STANDALONE_VERSION}/pact-${PACT_CLI_STANDALONE_VERSION}-osx-arm64.tar.gz && \
 		tar xzf pact-${PACT_CLI_STANDALONE_VERSION}-osx.tar.gz && \
 		./pact/bin/pact-mock-service --help && \
 		./pact/bin/pact-provider-verifier --help && \

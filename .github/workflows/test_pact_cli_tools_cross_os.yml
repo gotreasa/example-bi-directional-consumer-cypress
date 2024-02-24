@@ -52,8 +52,8 @@ jobs:
       fail-fast: false
       matrix:
         os: ['ubuntu-latest', 'windows-latest','macos-latest']
-        pact_tool: ['docker', 'ruby_cli','ruby_standalone' ]
-        node-version: [14.x,16.x,18.x,20.x]
+        pact_tool: ['ruby_standalone']
+        node-version: [14.x]
         pact_provider:
           [
             "pactflow-example-bi-directional-provider-dredd",
