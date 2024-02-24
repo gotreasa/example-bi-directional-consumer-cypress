@@ -59,16 +59,16 @@ jobs:
           ]
         pact_tool: 
           [
-            'docker',
+            # 'docker',
             # 'ruby_cli',
-            # 'ruby_standalone'
+            'ruby_standalone'
           ]
         node-version: 
           [
             # 14.x,
-            16.x,
+            # 16.x,
             # 18.x,
-            # 20.x
+            20.x
             ]
         pact_provider:
           [
