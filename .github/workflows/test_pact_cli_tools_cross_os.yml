@@ -54,14 +54,14 @@ jobs:
         os: 
           [
             'ubuntu-latest',
-            # 'windows-latest',
-            # 'macos-latest'
+            'windows-latest',
+            'macos-latest'
           ]
         pact_tool: 
           [
             'docker',
-            # 'ruby_cli',
-            # 'ruby_standalone'
+            'ruby_cli',
+            'ruby_standalone'
           ]
         node-version: 
           [
@@ -70,9 +70,9 @@ jobs:
           ]
         pact_provider:
           [
-            # "pactflow-example-bi-directional-provider-dredd",
+            "pactflow-example-bi-directional-provider-dredd",
             "pactflow-example-bi-directional-provider-postman",
-            # "pactflow-example-bi-directional-provider-restassured",
+            "pactflow-example-bi-directional-provider-restassured",
             # "pactflow-example-provider", # cdct provider - no oas
             # "pactflow-example-bi-directional-provider-dotnet" # mismatch
           ]
